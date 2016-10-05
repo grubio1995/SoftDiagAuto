@@ -1,0 +1,21 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Software Diagnóstico Automóvel</string>
+    <string name="alterarNome">Alterar nome</string>
+    <string name="testarBluetooth">Teste</string>
+    <string name="btConectar">Conectar ao leitor</string>
+    <string name="btLog">Exibir logs</string>
+    <string name="btSobre">Sobre o aplicativo</string>
+    <string name="btSair">Sair</string>
+    <string name="title_activity_configuracoes">Configurações</string>
+    <string name="btSensor1">Sensor 1</string>
+    <string name="btSensor2">Sensor 2</string>
+    <string name="btSensor3">Sensor 3</string>
+    <string name="btSensor4">Sensor 4</string>
+    <string name="btSensor5">Sensor 5</string>
+    <string name="btSensor6">Sensor 6</string>
+    <string name="btSensor7">Sensor 7</string>
+    <string name="title_activity_conexao_hardware">Software Diagnóstico Automóvel</string>
+    <string name="title_activity_informacoes">Informacoes</string>
+
+</resources>

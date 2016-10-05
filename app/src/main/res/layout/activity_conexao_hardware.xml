@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_conexao_hardware"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin">
+
+	<Button
+	    android:id="@+id/btSensor1"
+	    android:width="240dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/btSensor1"
+	    android:onClick="iniciarSensor1" />
+	
+	<Button
+	    android:id="@+id/btSensor2"
+	    android:width="240dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btSensor1"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/btSensor2"
+	    android:onClick="iniciarSensor2" />
+	
+	<Button
+	    android:id="@+id/btSensor3"
+	    android:width="240dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btSensor2"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/btSensor3"
+	    android:onClick="iniciarSensor3" />
+	
+	<Button
+	    android:id="@+id/btSensor4"
+	    android:width="240dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btSensor3"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/btSensor4"
+	    android:onClick="iniciarSensor4" />
+	
+	<Button
+	    android:id="@+id/btSensor5"
+	    android:width="240dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btSensor4"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/btSensor5"
+	    android:onClick="iniciarSensor5" />
+	
+	<Button
+	    android:id="@+id/btSensor6"
+	    android:width="240dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btSensor5"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/btSensor6"
+	    android:onClick="iniciarSensor6" />
+	
+	<Button
+	    android:id="@+id/btSensor7"
+	    android:width="240dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btSensor6"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/btSensor7"
+	    android:onClick="iniciarSensor7" />
+
+</RelativeLayout>
