@@ -4,9 +4,11 @@
     <string name="alterarNome">Alterar nome</string>
     <string name="testarBluetooth">Teste</string>
     <string name="btConectar">Conectar ao leitor</string>
-    <string name="btLog">Exibir logs</string>
+    <string name="btLog">Falhas</string>
     <string name="btSobre">Sobre o aplicativo</string>
     <string name="btSair">Sair</string>
+    <string name="btInfo">Informações</string>
+    <string name="btParametro">Parametros</string>
     <string name="title_activity_configuracoes">Configurações</string>
     <string name="btSensor1">Sensor 1</string>
     <string name="btSensor2">Sensor 2</string>

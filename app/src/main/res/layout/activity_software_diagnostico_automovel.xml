@@ -1,58 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<GridLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:baselineAligned="false"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-   	
-	<TextView
-	    android:id="@+id/txtSaudacao"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_marginTop="50dp"
-	    android:textSize="20sp"
-        android:gravity="center" />
-	
-	<Button
-	    android:id="@+id/btConectar"
-	    android:width="240dp"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/txtSaudacao"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="100dp"
-	    android:text="@string/btConectar"
-	    android:onClick="conectarLeitor" />
-	
-	<Button
-	    android:id="@+id/btLog"
-	    android:width="240dp"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/btConectar"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="20dp"
-	    android:text="@string/btLog" />
-	
-	<Button
-	    android:id="@+id/btSobre"
-	    android:width="240dp"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/btLog"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="20dp"
-	    android:text="@string/btSobre" />
-	
-	<Button
-	    android:id="@+id/btSair"
-	    android:width="240dp"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_below="@+id/btSobre"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="20dp"
-	    android:text="@string/btSair"
-	    android:onClick="sairApp" />
-	    
-</RelativeLayout>
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:useDefaultMargins="true"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_app_logo"
+        android:id="@+id/imageView"
+        android:layout_row="0"
+        android:layout_columnSpan="2"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/txtSaudacao"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_columnSpan="2" />
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_bluetooth"
+        android:id="@+id/btConectar"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:contentDescription="@string/btConectar"
+        android:layout_gravity="top"
+        android:onClick="conectarLeitor"/>
+
+    <TextView
+        android:text="@string/btConectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_fails"
+        android:id="@+id/btLog"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:contentDescription="@string/btLog"
+        android:adjustViewBounds="false"
+        android:layout_gravity="top"/>
+
+    <TextView
+        android:text="@string/btLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFalhas"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_info"
+        android:id="@+id/btInfo"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:contentDescription="@string/btInfo"
+        android:adjustViewBounds="false"
+        android:layout_gravity="top"/>
+
+    <TextView
+        android:text="@string/btInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInfo"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_parameters"
+        android:id="@+id/btParametro"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:contentDescription="@string/btParametro"
+        android:adjustViewBounds="false"
+        android:layout_gravity="top"/>
+
+    <TextView
+        android:text="@string/btParametro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtParamtro"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_about"
+        android:id="@+id/btSobre"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:contentDescription="@string/btSobre"
+        android:adjustViewBounds="false"
+        android:layout_gravity="top"/>
+
+    <TextView
+        android:text="@string/btSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSobre"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:layout_width="182dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_exit"
+        android:id="@+id/btSair"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:contentDescription="@string/btSair"
+        android:adjustViewBounds="false"
+        android:layout_gravity="top"
+        android:onClick="sairApp"/>
+
+    <TextView
+        android:text="@string/btSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSair"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="96dp"
+        android:textSize="20sp"/>
+
+
+    <!--
+    <Button
+        android:id="@+id/btConectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btConectar"
+        android:onClick="conectarLeitor"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_gravity="center"/>
+    <Button
+		android:id="@+id/btLog"
+		android:layout_width="115dp"
+		android:layout_height="wrap_content"
+		android:text="@string/btLog"
+		android:layout_column="1"
+		android:layout_row="2"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btInfo"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btParametro"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btParametro"
+        android:layout_column="1"
+        android:layout_row="3"
+        android:layout_gravity="center"/>
+
+
+    <Button
+        android:id="@+id/btSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btSobre"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btSair"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btSair"
+        android:onClick="sairApp"
+        android:layout_column="1"
+        android:layout_row="4"
+        android:layout_gravity="center"/>
+
+    -->
+
+
+</GridLayout>
+
+</ScrollView>
