@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fatec.tg.softdiagauto.ActivityFalhas">
+    <item
+        android:id="@+id/gerar_relatorio_falhas"
+        android:orderInCategory="100"
+        android:icon="@drawable/relatorio"
+        android:title="@string/gerar_relatorio"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/filtrar_falhas"
+        android:orderInCategory="100"
+        android:icon="@drawable/filtrar"
+        android:title="@string/filtrar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/apagar_falhas"
+        android:orderInCategory="100"
+        android:icon="@drawable/apagar"
+        android:title="@string/apagar_falhas"
+        app:showAsAction="always"
+        android:onClick="confirmarApagarFalhas"/>
+
+</menu>

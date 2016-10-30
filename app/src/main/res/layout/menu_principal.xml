@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <GridLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="55dp"
+        android:baselineAligned="false"
+        android:useDefaultMargins="false">
+
+
+        <ImageView
+            android:layout_width="182dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_bluetooth"
+            android:id="@+id/btConectar"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:contentDescription="@string/btConectar"
+            android:layout_gravity="top"
+            android:onClick="conectarLeitor"/>
+
+        <TextView
+            android:text="@string/btConectar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="96dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="182dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_fails"
+            android:id="@+id/btLog"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:contentDescription="@string/btLog"
+            android:adjustViewBounds="false"
+            android:layout_gravity="top"
+            android:onClick="falhas"/>
+
+        <TextView
+            android:text="@string/btLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFalhas"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="96dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="182dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_info"
+            android:id="@+id/btInfo"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/btInfo"
+            android:adjustViewBounds="false"
+            android:layout_gravity="top"
+            android:onClick="informacoesCentral"/>
+
+        <TextView
+            android:text="@string/btInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInfo"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="126dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="182dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_parameters"
+            android:id="@+id/btParametro"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/btParametro"
+            android:adjustViewBounds="false"
+            android:layout_gravity="top"
+            android:onClick="parametros"/>
+
+        <TextView
+            android:text="@string/btParametro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtParamtro"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="126dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="182dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_about"
+            android:id="@+id/btSobre"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/btSobre"
+            android:adjustViewBounds="false"
+            android:layout_gravity="top"
+            android:onClick="sobre"/>
+
+        <TextView
+            android:text="@string/btSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSobre"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginTop="126dp"
+            android:textSize="20sp"/>
+
+
+        <ImageView
+            android:layout_width="192dp"
+            android:layout_height="103dp"
+            android:src="@drawable/icon_exit"
+            android:id="@+id/btSair"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/btSair"
+            android:adjustViewBounds="false"
+            android:layout_gravity="top"
+            android:onClick="confirmarSaida"/>
+
+        <TextView
+            android:text="@string/btSair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtSair"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginTop="126dp"
+            android:textSize="20sp"/>
+
+
+    </GridLayout>
+
+</ScrollView>

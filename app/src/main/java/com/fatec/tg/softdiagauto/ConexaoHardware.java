@@ -15,7 +15,7 @@ public class ConexaoHardware extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_conexao_hardware);
+        setContentView(R.layout.activity_parametros);
     }
 
     //Função para exibir um prompt para o usuário digitar o nome.

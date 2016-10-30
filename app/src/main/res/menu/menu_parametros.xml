@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fatec.tg.softdiagauto.ActivityParametros">
+    <item
+        android:id="@+id/gerar_relatorio_parametros"
+        android:orderInCategory="100"
+        android:icon="@drawable/relatorio"
+        android:title="@string/gerar_relatorio"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/filtrar_parametros"
+        android:orderInCategory="100"
+        android:icon="@drawable/filtrar"
+        android:title="@string/filtrar"
+        app:showAsAction="always"/>
+
+</menu>
